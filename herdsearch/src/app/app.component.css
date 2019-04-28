@@ -1,8 +1,11 @@
 body{
-    background-color: gray;
+    background-color: lightgray;
     size: inherit;
+    color: lightgray;
 }
- h1{
-     background-color: lightgray;
-     color: black;
- }
+h1{
+    color: black;
+}
+p{
+    color: black;
+}
