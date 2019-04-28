@@ -9,4 +9,6 @@ export interface Profile{
     morningPerson?: boolean;
     petFriendly?: boolean;
     smoking?: boolean;
+    email?: string;
+    password?: string;
 }
