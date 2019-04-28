@@ -1,42 +1,38 @@
-
-<body>
-
-<div>
-  First name: <input type="text" name="FirstName"><br>
-  Last name: <input type="text" name="LastName"><br>
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">Add Profile</span>
+    <form (ngSubmit) = onSubmit() class="col s6">
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="lname">Last Name</label>
+          <input type="text" placeholder="Add Last Name" [(ngModel)] = 'Profile.lname' name='lname'>
+        </div>
+        <div class="input-field col s6">
+          <label for="fname">First Name</label>
+          <input type="text" placeholder="Add First Name" [(ngModel)] = 'Profile.fname' name='fname'>
+        </div>
+        <div class="input-field col s6">
+          <label for="age">Age</label>
+          <input type="number" placeholder="Add Age" [(ngModel)] = 'Profile.age' name='age'>
+        </div>
+        <div class="input-field col s6">
+          <label for="costPerMonth"></label>
+          <input type="number" placeholder="Add costPerMonth" [(ngModel)] = 'Profile.costPerMonth' name='costPerMonth'>
+        </div>
+        <div class="input-field col s6">
+          <label for="drinking">Drinking</label>
+          <input type="radio" placeholder="Add drinking" [(ngModel)] = 'Profile.drinking' name='drinking'>
+        </div>
+        <div class="input-field col s6">
+          <label for="gender">Gender</label>
+          <input type="radio" placeholder="Add gender" [(ngModel)] = 'Profile.gender' name='gender'>
+        </div>
+        <div class="input-field col s6">
+          <label for="drinking">Drinking</label>
+          <input type="radio" placeholder="Add drinking" [(ngModel)] = 'Profile.drinking' name='drinking'>
+      </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </div>
+    </form>
+  </div>
 </div>
-
-<div>
-  Age: <input type="number" name="age" min="0" max="100"><br>
-</div>
-
-<div>
-  Price Per Month: <input type="number" name="price" min="0" max="10000"><br>
-</div>
-
-<div>
-  Do you Drink?   <input type="radio" name="Drinker" value="yes"> Yes<br>
-                  <input type="radio" name="Drinker" value="no"> No<br>
-</div>
-
-<div>
-  Gender: <input type="text" name="Gender"><br>
-</div>
-
-<div>
-  Major: <input type="text" name="Major"><br>
-
-    <input type="radio" name="Morning Person" value="yes"> Yes<br>
-    <input type="radio" name="Morning Person" value="no"> No<br>
-
-    <input type="radio" name="Pet Friendly?" value="yes"> Yes<br>
-    <input type="radio" name="Pet Friendly?" value="no"> No<br>
-
-    <input type="radio" name="Smoking?" value="yes"> Yes<br>
-    <input type="radio" name="Smoking?" value="no"> No<br>
-</div>
-
-<div>
-  <button type="button">Submit!</button><br>
-</div>
-</body>
