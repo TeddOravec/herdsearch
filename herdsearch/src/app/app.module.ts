@@ -9,11 +9,15 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 import { AddProfileComponent } from './add-profile/add-profile.component';
+import { ProfileListComponent } from './profile-list/profile-list.component';
+import { ProfileDetailComponent } from './profile-detail/profile-detail.component';
 
 @NgModule({
    declarations: [
       AppComponent,
-      AddProfileComponent
+      AddProfileComponent,
+      ProfileListComponent,
+      ProfileDetailComponent
    ],
    imports: [
       FormsModule,
