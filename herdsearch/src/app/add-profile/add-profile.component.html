@@ -1,8 +1,8 @@
+<body>
 <div class="card">
   <div class="card-content">
     <span class="card-title">Add Profile</span>
     <form (ngSubmit) = onSubmit() class="col s6">
-      <div class="row">
         <div class="input-field col s6">
           <label for="lname">Last Name</label>
           <input type="text" placeholder="Add Last Name" [(ngModel)] = 'Profile.lname' name='lname'>
@@ -16,23 +16,23 @@
           <input type="number" placeholder="Add Age" [(ngModel)] = 'Profile.age' name='age'>
         </div>
         <div class="input-field col s6">
-          <label for="costPerMonth"></label>
+          <label for="costPerMonth">Preferred Cost per Month</label>
           <input type="number" placeholder="Add costPerMonth" [(ngModel)] = 'Profile.costPerMonth' name='costPerMonth'>
         </div>
         <div class="input-field col s6">
           <label for="drinking">Drinking</label>
-          <input type="radio" placeholder="Add drinking" [(ngModel)] = 'Profile.drinking' name='drinking'>
+          <input type="checkbox" placeholder="Add drinking" [(ngModel)] = 'Profile.drinking' name='drinking'>
         </div>
         <div class="input-field col s6">
           <label for="gender">Gender</label>
-          <input type="radio" placeholder="Add gender" [(ngModel)] = 'Profile.gender' name='gender'>
+          <input type="text" placeholder="Add gender" [(ngModel)] = 'Profile.gender' name='gender'>
         </div>
         <div class="input-field col s6">
-          <label for="drinking">Drinking</label>
-          <input type="radio" placeholder="Add drinking" [(ngModel)] = 'Profile.drinking' name='drinking'>
-      </div>
+          <label for="smoking">Smoking</label>
+          <input type="checkbox" placeholder="Add smoking" [(ngModel)] = 'Profile.smoking' name='smoking'>
+        </div>
         <input type="submit" value="Submit" class="btn btn-primary">
-      </div>
     </form>
   </div>
 </div>
+</body>
