@@ -12,24 +12,21 @@
   </head>
   <body>
     <div class="container">
-      <div class="col-sm">
-        <div class="container">
-          <div class = "row">
-            <img width="300" height="160" alt="HerdSearch Logo" src="assets/images/HerdSearchLogo.png"> filler text
-            <div class = "jumbotron">
-              <h1>Welcome to {{title}}!</h1><div class="row">
-                  <div class="col s2">
-                      <div class="input-group">
-                        <span class="input-group-text" id="">Email</span>
-                        <input type="text" name='email' class="form-control">
-                        <span class="input-group-text" id="">Password</span>
-                        <input type="text" name='password' class="form-control">
-                      </div>
-                  </div>
-                  <div class="col-sm">
-                    <button type="button" class="btn btn-success">Login</button>
-                  </div>
-                </div>
+          <div class = "jumbotron bg-transparent">
+              <div class="row justify-content-md-center">
+            <div class="col-3">
+              <img class="img-fluid" src="assets/images/HerdSearchLogo.png">
+            </div>
+            <div class="col-md-auto">
+              <p></p>
+              <p class="text-center display-4">Welcome to {{title}}!</p>
+              <p></p>
+              <div class="input-group">
+                <span class="input-group-text" id="">Email</span>
+                <input type="text" name='email' class="form-control">
+                <span class="input-group-text" id="">Password</span>
+                <input type="text" name='password' class="form-control">
+              <button type="button" class="btn btn-success">Login</button>
             </div>
           </div>
         </div>
@@ -39,9 +36,9 @@
     <!--Functional Components-->
 
     <div class="container">
-      <div class = "jumbotron">
-        <p>
-          Finding roommates in {{currentYear}} can be difficult. <br> As most of our lives are online and on social media platforms, it's difficult to meet new people face-to-face. <br> HerdSearch is a free web-based service that allows NDSU students to easily find new roommates based on a list of criteria. <br> Below, you'll find all search criteria we use to find you the best roommates.
+      <div class = "jumbotron col s6">
+        <p class="text-left">
+          Finding roommates in {{currentYear}} can be difficult. <br> As most of our lives are online and on social media platforms, it's difficult to meet new people face-to-face. <br> {{title}} is a free web-based service that allows NDSU students to easily find new roommates based on a list of criteria. <br> Below, you'll find all search criteria we use to find you the best roommates.
         </p>
 
         <div>
@@ -49,6 +46,15 @@
         </div>
       </div>
     </div>
+
+
+      <div class = "row">
+        <div class="col s6">
+        <div class="p-3 mb-2 text-dark">  
+          <p class="text-center">Copyright © {{currentYear}} Vaughan Johnson, Nathan Marcotte, Theodore Oravec, Ryan Schirado, Samuel Silverberg</p>
+        </div></div>
+        
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
