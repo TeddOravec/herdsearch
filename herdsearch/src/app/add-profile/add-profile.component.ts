@@ -13,7 +13,7 @@ export class AddProfileComponent implements OnInit {
   pro: Profile ={
     fname: '',
     lname: '',
-    age: null,
+    age: 0,
     gender: '',
     major: '',
     costPerMonth: 0,

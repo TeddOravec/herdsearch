@@ -10,5 +10,5 @@ export interface Profile{
     petFriendly?: boolean;
     smoking?: boolean;
     email?: string;
-    password?: string;
+    password?: string
 }
