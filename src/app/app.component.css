@@ -1,0 +1,11 @@
+body{
+    background-color: lightgray;
+    size: inherit;
+    color: lightgray;
+}
+h1{
+    color: black;
+}
+p{
+    color: black;
+}
