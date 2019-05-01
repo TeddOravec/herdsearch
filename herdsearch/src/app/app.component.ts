@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Herd Search';
-  currentYear = new Date().getFullYear()
-
+  currentYear = new Date().getFullYear();
 }
