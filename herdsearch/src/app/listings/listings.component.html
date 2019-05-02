@@ -1,4 +1,10 @@
-<h2>Possible Matches:</h2>
-<ul *ngFor="let profile of profiles">
-  <li>{{profile.fname}}</li>
-</ul>
+<body>
+  <div class="container">
+      <button type="button" class="btn btn-outline-success" (click)='getProfiles()'>Click</button>
+      <ul>
+        <li *ngFor="let profile of profiles">
+          {{profile.fName}}
+        </li>
+      </ul>
+  </div>
+</body>

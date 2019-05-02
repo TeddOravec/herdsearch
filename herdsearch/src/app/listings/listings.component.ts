@@ -15,8 +15,8 @@ export class ListingsComponent implements OnInit {
 
   ngOnInit() {
     this.proServ.getProfiles()
-    .subscribe(data => {this.profiles = data
-    console.log(data);
+    .subscribe(person => {this.profiles = person
+    console.log(person);
   })
   }
 

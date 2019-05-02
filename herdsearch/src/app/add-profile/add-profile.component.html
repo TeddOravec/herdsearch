@@ -8,29 +8,29 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="names">First and last name</span>
           </div>
-          <input type="text" [(ngModel)] = 'Profile.fname' name='fname' class="form-control">
-          <input type="text" [(ngModel)] = 'Profile.lname' name='lname' class="form-control">
+          <input type="text" [(ngModel)] = 'pro.fname' name='fname' class="form-control">
+          <input type="text" [(ngModel)] = 'pro.lname' name='lname' class="form-control">
         </div>
         <div class="input-group col s8">
 
           <span class="input-group-text" id="">Age</span>
-          <input type="number" [(ngModel)]='Profile.age' name='age' class="form-control">
+          <input type="number" [(ngModel)]='pro.age' name='age' class="form-control">
           <span class="input-group-text" id="">Gender</span>
-          <input type="text" [(ngModel)]='Profile.gender' name='gender' class="form-control">
+          <input type="text" [(ngModel)]='pro.gender' name='gender' class="form-control">
           <span class="input-group-text" id="">Major</span>
-          <input type="text" [(ngModel)]='Profile.major' name='major' class="form-control">
+          <input type="text" [(ngModel)]='pro.major' name='major' class="form-control">
           <span class="input-group-text" id="">$/month</span>
-          <input type="number" [(ngModel)]='Profile.costPerMonth' name='costPerMonth' class="form-control">
+          <input type="number" [(ngModel)]='pro.costPerMonth' name='costPerMonth' class="form-control">
         </div>
         <div class="input-group col s6">
           <span class="input-group-text">Drinking</span>
-          <input type="checkbox" [(ngModel)] = 'Profile.drinking' name='drinking' class="form-control">
+          <input type="checkbox" [(ngModel)] = 'pro.drinking' name='drinking' class="form-control">
           <span class="input-group-text">Smoking</span>
-          <input type="checkbox" [(ngModel)] = 'Profile.smoking' name='smoking' class="form-control">
+          <input type="checkbox" [(ngModel)] = 'pro.smoking' name='smoking' class="form-control">
           <span class="input-group-text">Pet Friendly</span>
-          <input type="checkbox" [(ngModel)] = 'Profile.petFriendly' name='petFriendly' class="form-control">
+          <input type="checkbox" [(ngModel)] = 'pro.petFriendly' name='petFriendly' class="form-control">
           <span class="input-group-text">Morning person</span>
-          <input type="checkbox" [(ngModel)] = 'Profile.morningPerson' name='morningPerson' class="form-control">
+          <input type="checkbox" [(ngModel)] = 'pro.morningPerson' name='morningPerson' class="form-control">
         </div>
         <P></P>
           <input type="submit" value="Search using info" class="btn btn-warning col s6">
@@ -38,9 +38,9 @@
         <div class="alert alert-warning" role="alert">Contact Information (required to save info to an account)</div>
         <div class="input-group col s6">
             <span class="input-group-text">Email Address</span>
-            <input type="text" [(ngModel)] = 'Profile.email' name='email' class="form-control">
+            <input type="text" [(ngModel)] = 'pro.email' name='email' class="form-control">
             <span class="input-group-text">Password</span>
-            <input type="password" [(ngModel)] = 'Profile.password' name='password' class="form-control">
+            <input type="password" [(ngModel)] = 'pro.password' name='password' class="form-control">
         </div>
         <p></p>
           <input type="submit" value="Create an account" class="btn btn-success col s6">

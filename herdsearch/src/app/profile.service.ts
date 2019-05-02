@@ -13,16 +13,16 @@ export class ProfileService {
 
   constructor(public afs: AngularFirestore) {
     this.profiles = afs.collection('users').valueChanges();
-    this.profileCollection = this.afs.collection('users')
+    this.profileCollection = this.afs.collection('users');
    }
 
-   getProfiles(): Observable<Profile[]>{
+   getProfiles(): Observable<Profile[]> {
 
     console.log(this.profiles);
     return this.profiles;
    }
 
-   addProfile(pro: Profile){
+   addProfile(pro: Profile) {
      this.profileCollection.add(pro);
    }
 
