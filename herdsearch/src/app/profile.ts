@@ -1,6 +1,6 @@
 export interface Profile{
-    lname?: string;
-    fname?: string;
+    lName?: string;
+    fName?: string;
     age?: number;
     costPerMonth?: number;
     drinking?: boolean;

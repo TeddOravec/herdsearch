@@ -1,10 +1,17 @@
 <body>
-  <div class="container">
-      <button type="button" class="btn btn-outline-success" (click)='getProfiles()'>Click</button>
-      <ul>
-        <li *ngFor="let profile of profiles">
-          {{profile.fName}}
+    <div class="card">
+        <div class="card-content">
+    <div class="alert alert-warning col s6" role="alert">Your Matches</div>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let profile of profiles">
+          <div class="card">
+            <div class="card-body">
+              {{profile.fName}} {{profile.lName}}
+            </div>
+          </div>
+          
         </li>
       </ul>
-  </div>
+    </div>
+</div>
 </body>
