@@ -9,3 +9,4 @@ export class AppComponent {
   title = 'Herd Search';
   currentYear = new Date().getFullYear();
 }
+ 
