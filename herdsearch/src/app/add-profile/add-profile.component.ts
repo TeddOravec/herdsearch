@@ -33,6 +33,7 @@ export class AddProfileComponent implements OnInit {
   onSubmit(){
     if(this.pro.fname != '' && this.pro.lname != '' && this.pro.age != 0 && this.pro.costPerMonth != 0){
       this.proServ.addProfile(this.pro);
+      
     }
     this.pro.fname ='';
     this.pro.lname ='';

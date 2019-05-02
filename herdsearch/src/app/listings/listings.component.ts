@@ -9,7 +9,7 @@ import { Profile } from '../profile';
 })
 export class ListingsComponent implements OnInit {
 
-  profiles: Profile[] =[];
+  profiles: Profile[];
 
   constructor(private proServ: ProfileService) { }
 

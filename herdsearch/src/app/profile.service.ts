@@ -12,8 +12,8 @@ export class ProfileService {
   profileDoc: AngularFirestoreDocument<Profile>;
 
   constructor(public afs: AngularFirestore) {
-    this.profiles = afs.collection('profiles').valueChanges();
-    this.profileCollection = this.afs.collection('profiles')
+    this.profiles = afs.collection('users').valueChanges();
+    this.profileCollection = this.afs.collection('users')
    }
 
    getProfiles(): Observable<Profile[]>{
