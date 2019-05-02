@@ -1,17 +1,17 @@
 <body>
-    <div class="card">
-        <div class="card-content">
-    <div class="alert alert-warning col s6" role="alert">Your Matches</div>
-      <ul class="list-group">
-        <li class="list-group-item" *ngFor="let profile of profiles">
-          <div class="card">
-            <div class="card-body">
-              {{profile.fName}} {{profile.lName}}
-            </div>
+  <div class="card">
+    <div class="card-content">
+      <form class="col s6">
+        <p></p>
+        <div class="alert alert-warning col s6" role="alert">Your Matches</div>
+        <div class="card" *ngFor="let profile of profiles">
+          <div class="card-body" >
+            {{profile.fName}} {{profile.lName}}
           </div>
-          
-        </li>
-      </ul>
+          <p></p>
+        </div>
+        <p></p>
+      </form>
     </div>
-</div>
+  </div>
 </body>
