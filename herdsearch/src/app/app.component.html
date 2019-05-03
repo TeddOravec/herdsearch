@@ -13,14 +13,14 @@
   <body>
     <div class="container">
           <div class = "jumbotron bg-transparent">
-              <div class="row justify-content-md-center">
-            <div class="col-3">
-              <img class="img-fluid" src="assets/images/HerdSearchLogo.png">
-            </div>
-            <div class="col-md-auto">
+            <div class="row justify-content-md-center">
+              <div class="col-3">
+                <img class="img-fluid" src="assets/images/HerdSearchLogo.png">
+              </div>
+              <div class="col-md-auto">
               <p></p>
-              <p class="text-center display-4">Welcome to {{title}}!</p>
-          </div>
+              <p class="text-center display-4">Welcome to {{title}}!</p><p></p>
+           </div>
         </div>
       </div>
     </div>
@@ -34,6 +34,11 @@
         </p>
 
         <div>
+            <form class="col s6">
+          <input value="Create a Listing" class="btn btn-success col s6" *ngIf="!newListing" (click)="makeListing()">
+            </form>
+        </div>
+        <div *ngIf="newListing">
           <app-add-profile></app-add-profile>
         </div>
         <p></p>

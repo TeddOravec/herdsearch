@@ -1,20 +1,70 @@
 <body>
-  <div class="card">
-    <div class="card-content">
-      <form class="col s6">
-        <p></p>
-        <div class="alert alert-warning col s6" role="alert">Other Listings</div>
-        <div class="card" *ngFor="let profile of profiles">
-          <div class="card-body">
-              <h2 class="card-title">{{profile.fName}} {{profile.lName}}</h2>
-              <h6 class="card-subtitle mb-2 text-muted">Student of {{profile.major}}</h6>
-               {{profile.age}} - {{profile.gender}} : Cost Per Month - {{profile.costPerMonth}} : Smoking - {{profile.smoking}} : Pet Friendly - {{profile.petFriendly}} : Drinking - {{profile.drinking}} : Morning Person - {{profile.morningPerson}}
-               <button type="button" class="btn btn-success"><a href="mailto:{{profile.email}}" class="card-link text-white">Email me</a></button>
-               
+    <form *ngIf="filters" class="col s6">
+      <div class="card">
+        <div class="card-body">
+          <div class="input-group col s6">
+            <span class="input-group-text">Drinking</span>
+            <input type="checkbox" [(ngModel)] = 'drinking' name='drinking' class="form-control">
+            <span class="input-group-text">Smoking</span>
+            <input type="checkbox" [(ngModel)] = 'smoking' name='smoking' class="form-control">
+            <span class="input-group-text">Pet Friendly</span>
+            <input type="checkbox" [(ngModel)] = 'petFriendly' name='petFriendly' class="form-control">
+            <span class="input-group-text">Morning person</span>
+            <input type="checkbox" [(ngModel)] = 'morningPerson' name='morningPerson' class="form-control">
+            <input value="Search" class="btn btn-warning" (click)="filterResults()">
           </div>
         </div>
+      </div>
+    </form>
+
+  <form class="col s6">
+    <p></p>
+    <div class="alert alert-warning col s6" role="alert">Available Listings</div>
+    <div class="card-columns">
+      <div class="card border-success mb-3" *ngFor="let profile of profiles">
+        <div class="card-body">
+          <h2 class="card-title">{{profile.fName}} {{profile.lName}}</h2>
+          <h6 class="card-subtitle mb-2 text-muted">Student of {{profile.major}}</h6>
+          <p class="card-text">
+            I am {{profile.age}} years old, and<br>
+            I'm willing to pay up to ${{profile.costPerMonth}} a month for rent
+          </p>
+          <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                    <img class="img-fluid" src="assets/images/male.png" *ngIf="profile.gender=='Male'">
+                    <img class="img-fluid" src="assets/images/female.png" *ngIf="profile.gender=='Female'">
+                </div>
+                <div class="col-sm">
+                  <img class="img-fluid" src="assets/images/morning.png" *ngIf="profile.morningPerson==true">
+                  <img class="img-fluid" src="assets/images/night.png" *ngIf="profile.morningPerson==false">
+                </div>
+              </div>
+          </div>
+          <p></p>
+          <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <img class="img-fluid" src="assets/images/smoking.png" *ngIf="profile.smoking==true">
+                  <img class="img-fluid" src="assets/images/nosmoking.png" *ngIf="profile.smoking==false">
+                </div>
+                <div class="col-sm">
+                    <img class="img-fluid" src="assets/images/drinking.png" *ngIf="profile.drinking==true">
+                    <img class="img-fluid" src="assets/images/nodrinking.png" *ngIf="profile.drinking==false">
+                </div>
+                <div class="col-sm">
+                  <img class="img-fluid" src="assets/images/pets.png" *ngIf="profile.petFriendly==true">
+                  <img class="img-fluid" src="assets/images/nopets.png" *ngIf="profile.petFriendly==false">
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-warning"><a href="mailto:{{profile.email}}" class="card-link text-success">Email me</a></button>
+        </div>
         <p></p>
-      </form>
+      </div>
     </div>
-  </div>
+    <p></p>
+  </form>
 </body>

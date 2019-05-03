@@ -35,6 +35,11 @@ export class AddProfileComponent implements OnInit {
       this.proServ.addProfile(this.pro);
       
     }
+    this.clearFields();
+  }
+
+
+  clearFields() {
     this.pro.fName ='';
     this.pro.lName ='';
     this.pro.age = null;
@@ -46,5 +51,4 @@ export class AddProfileComponent implements OnInit {
     this.pro.petFriendly=false;
     this.pro.morningPerson=false;
   }
-
 }

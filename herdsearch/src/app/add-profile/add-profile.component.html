@@ -16,7 +16,10 @@
           <span class="input-group-text" id="">Age</span>
           <input type="number" [(ngModel)]='pro.age' name='age' class="form-control">
           <span class="input-group-text" id="">Gender</span>
-          <input type="text" [(ngModel)]='pro.gender' name='gender' class="form-control">
+            <select id="inputState" class="form-control" [(ngModel)]='pro.gender' name='gender'>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
           <span class="input-group-text" id="">Major</span>
           <input type="text" [(ngModel)]='pro.major' name='major' class="form-control">
           <span class="input-group-text" id="">$/month</span>
@@ -39,11 +42,9 @@
         <div class="input-group col s6">
             <span class="input-group-text">Email Address</span>
             <input type="text" [(ngModel)] = 'pro.email' name='email' class="form-control">
-            <span class="input-group-text">Password</span>
-            <input type="password" [(ngModel)] = 'pro.password' name='password' class="form-control">
         </div>
         <p></p>
-          <input type="submit" value="Create a Listing" class="btn btn-success col s6">
+          <input type="submit" value="Save Listing" class="btn btn-success col s6">
         <p></p>
     </form>
   </div>

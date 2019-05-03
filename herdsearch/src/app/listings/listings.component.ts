@@ -10,6 +10,11 @@ import { Profile } from '../profile';
 export class ListingsComponent implements OnInit {
 
   profiles: Profile[];
+  drinking = false;
+  smoking = false;
+  petFriendly = false;
+  morningPerson = false;
+  filters = false;
 
   constructor(private proServ: ProfileService) { }
 
